@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HighPeaks: Discover the majestic highest peaks of the world. Get travel insights, explore famous mountains like Everest and K2, and plan your next great adventure.">
+    <meta name="keywords" content="Highest mountains, mountain climbing, trekking, adventure, travel, Mount Everest, K2, Makalu, Cho Oyu, expeditions, peaks">
+    <meta name="author" content="HighPeaks">
+    <title>HighPeaks - Explore the World's Highest Peaks</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero-section">
+        <nav class="navbar" id="navbar">
+            <a href="#" class="logo" aria-label="HighPeaks homepage">HighPeaks</a>
+            
+            <button class="hamburger" id="hamburger" aria-label="Open mobile navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" aria-label="Scroll to home section">Home</a></li>
+                <li><a href="#peaks" aria-label="Explore world's highest peaks">Peaks</a></li>
+                <li><a href="#map" aria-label="View interactive map">Map</a></li>
+                <li><a href="#expeditions" aria-label="Plan your expedition">Expeditions</a></li>
+                <li><a href="#contact" aria-label="Scroll to contact us section">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content" id="hero">
+            <h1 class="fade-in">Conquer the Giants of the Globe</h1>
+            <p class="fade-in">Discover the six highest peaks on Earth and plan your next great adventure.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="split-section" id="about">
+            <div class="text-container">
+                <h3>The 8000ers Club</h3>
+                <h2>Beyond the Realm of Clouds</h2>
+                <p>
+                    The world's highest mountains, all soaring above 8,000 meters, are the ultimate arenas of mountaineering. Located in the Himalayan and Karakoram ranges, these peaks are more than just geographical marvels; they are symbols of human endurance, ambition, and the relentless pursuit of the extraordinary. Climbing them is a challenge reserved for the most skilled and determined adventurers.
+                </p>
+                <a href="#" class="btn hover-effect" aria-label="Read more about the highest peaks">Learn More</a>
+            </div>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="A mountaineer standing on a snowy ridge overlooking a vast mountain range." loading="lazy">
+            </div>
+        </section>
+
+        
+        <section class="peaks-section" id="peaks">
+            <h2>Meet the Giants</h2>
+            <p>From the legendary Mount Everest to the formidable K2, these are the six highest mountains on Earth. Each offers a unique challenge and a story etched in mountaineering history.</p>
+
+            <div class="filters" style="text-align: center; margin-bottom: 40px; display: flex; justify-content: center; gap: 15px;">
+                <button class="btn" data-filter="all">All Peaks</button>
+                <button class="btn" data-filter="Nepal">Nepal</button>
+                <button class="btn" data-filter="Pakistan">Pakistan</button>
+                <button class="btn" data-filter="China">China</button>
+            </div>
+
+            <div class="peaks-grid" id="peaks-grid">
+                </div>
+        </section>
+
+        <section class="map-section" id="map">
+            <h2>Explore the High Peaks</h2>
+            <p>Discover the geographical distribution of these majestic peaks across the Himalayan and Karakoram ranges.</p>
+            <div class="map-container">
+                <div id="himalayan-map" class="interactive-map">
+                    </div>
+                <div class="map-legend">
+                    <h4>Peak Locations</h4>
+                    <div class="legend-items">
+                        <div class="legend-item">
+                            <span class="legend-marker nepal"></span>
+                            <span>Nepal</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-marker pakistan"></span>
+                            <span>Pakistan</span>
+                        </div>
+                         <div class="legend-item">
+                            <span class="legend-marker china"></span>
+                            <span>China</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2>The Global Scale</h2>
+            <p>The numbers behind these mountains are as staggering as their altitudes. They represent decades of exploration, challenge, and human endeavor.</p>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">14</div>
+                    <div class="stat-label">8000m+ Peaks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10k+</div>
+                    <div class="stat-label">Successful Summits</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">70+</div>
+                    <div class="stat-label">Years of Exploration</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="expedition-plan-section" id="expeditions">
+            <h2>Plan Your Expedition</h2>
+            <p>Embarking on a high-altitude journey requires careful planning and preparation. Follow these steps to turn your dream into a reality.</p>
+            <div class="plan-container">
+                <div class="plan-item">
+                    <i class="fas fa-search-location" aria-hidden="true"></i>
+                    <h4>Research & Train</h4>
+                    <p>Understand the demands and prepare your body.</p>
+                </div>
+                <div class="plan-arrow">→</div>
+                <div class="plan-item">
+                    <i class="fas fa-mountain" aria-hidden="true"></i>
+                    <h4>Choose Your Peak</h4>
+                    <p>Select a goal that matches your skill level.</p>
+                </div>
+                <div class="plan-arrow">→</div>
+                <div class="plan-item">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                    <h4>Find a Guide</h4>
+                    <p>Partner with experienced local experts.</p>
+                </div>
+                <div class="plan-arrow">→</div>
+                <div class="plan-item">
+                    <i class="fas fa-cog" aria-hidden="true"></i>
+                    <h4>Gear Up</h4>
+                    <p>Acquire the right equipment for safety and success.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Start Your Journey</h2>
+            <p>Have questions or ready to plan your expedition? Reach out to our team of experts.</p>
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required aria-label="Your full name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required aria-label="Your email address">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required aria-label="Your message"></textarea>
+
+                <button type="submit" class="btn hover-effect">Send Inquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>HighPeaks</h3>
+                <p>Your guide to the world's highest peaks.</p>
+            </div>
+            <div class="footer-links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#about" class="hover-effect">About High Peaks</a></li>
+                    <li><a href="#peaks" class="hover-effect">Explore Peaks</a></li>
+                    <li><a href="#expeditions" class="hover-effect">Plan Your Trip</a></li>
+                    <li><a href="#" class="hover-effect">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>CONTACT US</h4>
+                <ul>
+                    <li><a href="mailto:hello@highpeaks.com" class="hover-effect">hello@highpeaks.com</a></li>
+                    <li><a href="tel:+11234567890" class="hover-effect">+1 (123) 456-7890</a></li>
+                    <li>123 Summit Trail, Global Base Camp</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>FOLLOW US</h4>
+                <div class="social-icons">
+                    <a href="#" class="hover-effect" aria-label="Visit us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover-effect" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover-effect" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HighPeaks. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="peak-modal" id="peak-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Peak Name</h3>
+                <button class="close-modal" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="peak-details">
+                    <div class="detail-item">
+                        <h5>Elevation</h5>
+                        <p id="modal-height">8,848m</p>
+                    </div>
+                    <div class="detail-item">
+                        <h5>Location</h5>
+                        <p id="modal-location">Nepal</p>
+                    </div>
+                    <div class="detail-item">
+                        <h5>First Ascent</h5>
+                        <p id="modal-first-ascent">1953</p>
+                    </div>
+                    <div class="detail-item">
+                        <h5>Difficulty</h5>
+                        <p id="modal-difficulty">Extreme</p>
+                    </div>
+                    <div class="detail-item">
+                        <h5>Coordinates</h5>
+                        <p id="modal-coordinates">27°59'17"N 86°55'31"E</p>
+                    </div>
+                    <div class="detail-item">
+                        <h5>Best Season</h5>
+                        <p id="modal-season">Spring (Apr-May)</p>
+                    </div>
+                </div>
+                <div class="peak-description" id="modal-description">
+                    Detailed description will be loaded here...
+                </div>
+                <div class="peak-gallery" id="modal-gallery">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
